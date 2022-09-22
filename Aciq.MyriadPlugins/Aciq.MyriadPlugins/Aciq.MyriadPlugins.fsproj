@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <WarnOn>3390;$(WarnOn)</WarnOn>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Fa.fs"/>
+        
+        <Compile Include="Aciq.MyriadPlugins.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Content Include="build\Aciq.MyriadPlugins.Test.props">
+            <Pack>false</Pack>
+            <PackagePath>%(Identity)</PackagePath>
+            <Visible>true</Visible>
+        </Content>
+
+        <Content Include="build\Aciq.MyriadPlugins.props">
+            <Pack>true</Pack>
+            <PackagePath>%(Identity)</PackagePath>
+            <Visible>true</Visible>
+        </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Myriad.Core" Version="0.8.1" PrivateAssets="all" />
+    </ItemGroup>
+
+    <Import Project="build/Aciq.MyriadPlugins.props" />
+
+</Project>

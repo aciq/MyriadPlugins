@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Aciq.MyriadPlugins", "Aciq.MyriadPlugins\Aciq.MyriadPlugins\Aciq.MyriadPlugins.fsproj", "{83DB0EF3-5971-4460-B0E8-54092A57B8F2}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Aciq.MyriadPlugins.Test", "Aciq.MyriadPlugins.Test\Aciq.MyriadPlugins.Test.fsproj", "{1D75087B-DCCF-4E66-8712-C3D51984176C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{83DB0EF3-5971-4460-B0E8-54092A57B8F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83DB0EF3-5971-4460-B0E8-54092A57B8F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83DB0EF3-5971-4460-B0E8-54092A57B8F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83DB0EF3-5971-4460-B0E8-54092A57B8F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D75087B-DCCF-4E66-8712-C3D51984176C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D75087B-DCCF-4E66-8712-C3D51984176C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D75087B-DCCF-4E66-8712-C3D51984176C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D75087B-DCCF-4E66-8712-C3D51984176C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
