@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Aciq.MyriadPlugins", "Aciq.MyriadPlugins\Aciq.MyriadPlugins\Aciq.MyriadPlugins.fsproj", "{83DB0EF3-5971-4460-B0E8-54092A57B8F2}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Aciq.MyriadPlugins", "Aciq.MyriadPlugins\Aciq.MyriadPlugins.fsproj", "{83DB0EF3-5971-4460-B0E8-54092A57B8F2}"
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Aciq.MyriadPlugins.Test", "Aciq.MyriadPlugins.Test\Aciq.MyriadPlugins.Test.fsproj", "{1D75087B-DCCF-4E66-8712-C3D51984176C}"
 EndProject
