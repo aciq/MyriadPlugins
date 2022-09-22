@@ -11,13 +11,24 @@
     <ItemGroup>
         <Content Include="myriad.toml" />
         <Compile Include="Sample1.fs" />
-        <Compile Include="Sample1Gen.fs" />
+<!--        <Compile Include="Sample1Gen.fs" />-->
+        <Compile Include="Sample1Gen.fs">
+            <MyriadFile>Sample1.fs</MyriadFile>
+        </Compile>
         <Compile Include="Tests.fs" />
         <Compile Include="Program.fs" />
+    </ItemGroup>
+    
+    <ItemGroup>
+        <PackageReference Include="Myriad.Core" Version="0.8.1"/>
+        <PackageReference Include="Myriad.Sdk" Version="0.8.1"/>
+<!--        <MyriadSdkGenerator Include="C:\Users\kast\source\myrepos\Aciq.MyriadPlugins\Aciq.MyriadPlugins\bin\Debug\net6.0\Aciq.MyriadPlugins.dll"/>-->
+        <MyriadSdkGenerator Include="$(MSBuildThisFileDirectory)/bin/$(Configuration)/net6.0/Aciq.MyriadPlugins.dll"/>
     </ItemGroup>
 
     <ItemGroup>
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0" />
+        
         <PackageReference Include="xunit" Version="2.4.1" />
         <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>

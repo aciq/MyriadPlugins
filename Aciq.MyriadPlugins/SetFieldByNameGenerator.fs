@@ -89,7 +89,7 @@ type SetFieldByNameGenerator() =
         member _.ValidInputExtensions = seq { ".fs" }
 
         member _.Generate(context: GeneratorContext) =
-
+            
             let exampleNamespace =
                 context.ConfigKey
                 |> Option.map context.ConfigGetter

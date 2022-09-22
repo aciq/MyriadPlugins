@@ -23,12 +23,14 @@ let onChanged() =
             $@"{userFolder}/.nuget/packages/myriad.sdk/0.8.1/tools/net6.0/any/Myriad.dll"
             "--inputfile"
             fp("Sample1.fs",TestProjectPath)
-            "--outputfile"
-            fp("Sample1Gen.fs",TestProjectPath)
+//            "--outputfile"
+//            fp("Sample1Gen.fs",TestProjectPath)
+            
             "--configfile"
             fp("myriad.toml",TestProjectPath)
             "--plugin"
             $@"{__SOURCE_DIRECTORY__}/bin/Debug/net6.0/Aciq.MyriadPlugins.dll"
+            "--inlinegeneration"
 //            "--configkey"
 //            "conf1"
         ]
