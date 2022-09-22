@@ -10,11 +10,13 @@
 
     <ItemGroup>
         <Content Include="myriad.toml" />
-        <Compile Include="Sample1.fs" />
-<!--        <Compile Include="Sample1Gen.fs" />-->
-        <Compile Include="Sample1Gen.fs">
-            <MyriadFile>Sample1.fs</MyriadFile>
+        <Compile Include="Sample1.fs" >
+            <MyriadInlineGeneration>true</MyriadInlineGeneration>
         </Compile>
+<!--        <Compile Include="Sample1Gen.fs" />-->
+        <!-- <Compile Include="Sample1Gen.fs">
+            <MyriadFile>Sample1.fs</MyriadFile>
+        </Compile> -->
         <Compile Include="Tests.fs" />
         <Compile Include="Program.fs" />
     </ItemGroup>

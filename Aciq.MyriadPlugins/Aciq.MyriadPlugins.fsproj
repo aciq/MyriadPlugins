@@ -6,6 +6,26 @@
         <WarnOn>3390;$(WarnOn)</WarnOn>
     </PropertyGroup>
 
+    <PropertyGroup>
+        <PackageOutputPath>../nupkg</PackageOutputPath>
+        <Authors>aciq</Authors>
+        <Title>$(ProjectName)</Title>
+        <Version>1.0.0</Version>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <RepositoryUrl>https://github.com/aciq/MyriadPlugins</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/aciq/MyriadPlugins</PackageProjectUrl>
+        <PackageId>Aciq.MyriadPlugins</PackageId>
+        <PackageLicense>https://raw.githubusercontent.com/aciq/MyriadPlugins/master/LICENSE</PackageLicense>
+        <License>https://raw.githubusercontent.com/aciq/MyriadPlugins/master/LICENSE</License>
+        <Version>1.0.7</Version>
+        <Authors>aciq</Authors>
+        <Title>MyriadPlugins</Title>
+        <Description>Code generation plugins for Myriad</Description>
+        <PackageReadmeFile>../readme.md</PackageReadmeFile>
+    </PropertyGroup>
+
     <ItemGroup>
         <Compile Include="Fa.fs" />
         <Compile Include="Attribute.fs" />
@@ -13,6 +33,12 @@
     </ItemGroup>
 
     <ItemGroup>
+        <!-- <Content Include="build\Aciq.MyriadPlugins.Plugin.props">
+            <Pack>true</Pack>
+            <PackagePath>%(Identity)</PackagePath>
+            <Visible>true</Visible>
+        </Content> -->
+
         <Content Include="build\Aciq.MyriadPlugins.Test.props">
             <Pack>false</Pack>
             <PackagePath>%(Identity)</PackagePath>
@@ -30,6 +56,8 @@
 
     <ItemGroup>
         <PackageReference Include="Myriad.Core" Version="0.8.1" PrivateAssets="all" />
+        <!-- to include in references -->
+        <PackageReference Include="Myriad.Sdk" Version="0.8.1" PrivateAssets="none" />
         <PackageReference Update="FSharp.Core" Version="6.0.3" />
     </ItemGroup>
 
