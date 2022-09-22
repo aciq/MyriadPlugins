@@ -13,5 +13,7 @@ module PluginSettings =
         | "defaultCalloutType" -> { x with defaultCalloutType = unbox value }
         | "setting2" -> { x with setting2 = unbox value }
         | "setting4" -> { x with setting4 = unbox value }
+        | "newSetting" -> { x with newSetting = unbox value }
+        | "newSetting2" -> { x with newSetting2 = unbox value }
         | _ -> failwith "unimplemented case"
 

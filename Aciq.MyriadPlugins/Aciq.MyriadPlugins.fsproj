@@ -10,10 +10,6 @@
         <Compile Include="Fa.fs" />
         <Compile Include="Attribute.fs" />
         <Compile Include="SetFieldByNameGenerator.fs" />
-        
-        <Compile Include="Aciq.MyriadPlugins.fs" />
-        
-        
     </ItemGroup>
 
     <ItemGroup>

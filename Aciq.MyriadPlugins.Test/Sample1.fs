@@ -9,7 +9,10 @@ type PluginSettings =
         defaultCalloutType : string
         setting2 : bool
         setting4 : bool
+        newSetting : string
+        newSetting2 : string
     }
+
 
 
 
