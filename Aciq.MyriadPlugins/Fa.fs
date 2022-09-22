@@ -26,6 +26,11 @@ module Fn =
             (SynExpr.CreateIdentString fnName),
             SynExpr.CreateConstString args
         )
+    let ident1 fnName args =
+        SynExpr.CreateApp(
+            (SynExpr.CreateIdentString fnName),
+            SynExpr.CreateIdentString args
+        )
     
 
 module MatchClause =
@@ -53,7 +58,7 @@ module Exp =
                             copyInfo = SynExpr.CreateIdentString "x",
                             fieldUpdates = [
                                 recfn,
-                                Some (SynExpr.CreateIdentString "value")
+                                Some (Fn.ident1 "unbox" ("value"))
                             ]
                         )
                     
