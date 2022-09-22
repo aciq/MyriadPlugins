@@ -32,7 +32,6 @@ module private Impl =
                 ident
             )
             
-        printfn $"FIELDS: %A{fieldnames}"
         let expr = Fa.Exp.matchOne "key" fieldnames
 
         let returnTypeInfo = SynBindingReturnInfo.Create(recordType)
@@ -90,27 +89,10 @@ type SetFieldByNameGenerator() =
 
         member _.Generate(context: GeneratorContext) =
             
-            let exampleNamespace =
-                context.ConfigKey
-                |> Option.map context.ConfigGetter
-                |> Option.bind (
-                    Seq.tryPick (fun (n, v) ->
-                        if n = "namespace" then
-                            Some(v :?> string)
-                        else
-                            None)
-                )
-                |> Option.defaultValue "UnknownNamespace"
-                
-            stdout.WriteLine exampleNamespace
-            
-
-            //_myriadConfigKey is not currently used but could be a failover config section to use when the attribute passes no config section, or used as a root config
-            let ast, lines =
+            let ast, _ =
                 Ast.fromFilename context.InputFilename
                 |> Async.RunSynchronously
                 |> Array.head
-                
 
             let namespaceAndrecords =
                 Ast.extractRecords ast

@@ -40,7 +40,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Aciq.MyriadPlugins\Aciq.MyriadPlugins.fsproj" />
+        <ProjectReference Include="..\Aciq.MyriadPlugins\Aciq.MyriadPlugins.fsproj" />
+        <PackageReference Update="FSharp.Core" Version="6.0.3" />
     </ItemGroup>
 
 </Project>

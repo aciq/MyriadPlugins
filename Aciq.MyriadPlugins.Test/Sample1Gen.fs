@@ -11,9 +11,6 @@ module PluginSettings =
         match key with
         | "defaultCodeBlockLanguage" -> { x with defaultCodeBlockLanguage = unbox value }
         | "defaultCalloutType" -> { x with defaultCalloutType = unbox value }
-        | "setting2" -> { x with setting2 = unbox value }
-        | "setting4" -> { x with setting4 = unbox value }
-        | "newSetting" -> { x with newSetting = unbox value }
-        | "newSetting2" -> { x with newSetting2 = unbox value }
+        | "wasd" -> { x with wasd = unbox value }
         | _ -> failwith "unimplemented case"
 

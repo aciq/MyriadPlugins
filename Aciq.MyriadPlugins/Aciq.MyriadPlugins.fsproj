@@ -30,6 +30,7 @@
 
     <ItemGroup>
         <PackageReference Include="Myriad.Core" Version="0.8.1" PrivateAssets="all" />
+        <PackageReference Update="FSharp.Core" Version="6.0.3" />
     </ItemGroup>
 
     <Import Project="build/Aciq.MyriadPlugins.props" />
