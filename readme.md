@@ -6,7 +6,7 @@ NOTE: this is a work in progress
 
 #### Setup
 
-- add a the package
+- add the package reference
 - make sure to set GeneratePathProperty to true so the generator finds the plugin 
 ```xml
 <PackageReference Include="Aciq.MyriadPlugins" Version="1.0.0" GeneratePathProperty="true" />
