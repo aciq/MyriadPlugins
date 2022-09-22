@@ -9,7 +9,6 @@
     <PropertyGroup>
         <PackageOutputPath>../nupkg</PackageOutputPath>
         <Authors>aciq</Authors>
-        <Title>$(ProjectName)</Title>
         <Version>1.0.0</Version>
     </PropertyGroup>
 
@@ -19,11 +18,9 @@
         <PackageId>Aciq.MyriadPlugins</PackageId>
         <PackageLicense>https://raw.githubusercontent.com/aciq/MyriadPlugins/master/LICENSE</PackageLicense>
         <License>https://raw.githubusercontent.com/aciq/MyriadPlugins/master/LICENSE</License>
-        <Version>1.0.7</Version>
         <Authors>aciq</Authors>
         <Title>MyriadPlugins</Title>
         <Description>Code generation plugins for Myriad</Description>
-        <PackageReadmeFile>../readme.md</PackageReadmeFile>
     </PropertyGroup>
 
     <ItemGroup>
