@@ -76,7 +76,7 @@ module private Impl =
                     else
                         None)
                 |> Option.defaultValue "UnknownNamespace"
-
+            
             SynModuleOrNamespace.CreateNamespace(Ident.CreateLong fieldsNamespace, isRecursive = true, decls = [ mdl ])
         | _ -> failwithf "Not a record type"
 
